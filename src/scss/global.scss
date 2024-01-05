@@ -1,0 +1,52 @@
+@import './media.scss';
+@import './layout/sidebar.scss';
+@import './layout/device.scss';
+@import './layout/monitoring.scss';
+
+@import './normalize/normalize.css';
+@import './tools/pxToRem.scss';
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter\ Medium.woff2');
+}
+
+body {
+    color: white;
+    font-size: px-to-rem(27px);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+button {
+    border: none;
+}
+
+input {
+    all: unset;
+}
+
+.container {
+    background-color: #D9D9D9;
+    max-width: 1200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    background-color: #353030;
+    border-radius: 10px;
+    height: 674px;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}

@@ -1,0 +1,127 @@
+@import './tools/pxToRem.scss';
+
+@media screen and (min-width: 1000px) {
+    .content {
+        min-width: 1000px;
+    }
+
+    .device__temperature-name {
+        right: 243;
+        top: 22;
+    }
+
+    .device__temperature-stop {
+        margin-left: 87px;
+    }
+
+    .device {
+        display: flex;
+        margin: 60px 20px;
+    }
+
+    .monitoring__temperature {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        min-width: 800px
+    }
+
+    .device__temperature-name {
+        right: 144;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .device__temperature-name {
+        right: 140;
+    }
+
+    .device__temperature-stop {
+        margin-left: 87px;
+    }
+
+    .device {
+        margin: 60px;
+    }
+
+    .device__temperature-name {
+        top: 22;
+    }
+}
+
+@media screen and (max-width: 843px) {
+    .device__temperature-name {
+        right: 95;
+    }
+
+    .container {
+        width: 700px;
+    }
+
+    .content {
+        min-width: 700px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 600px;
+    }
+
+    .content {
+        min-width: 600px;
+    }
+
+    .device__temperature-name {
+        right: 47;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .device {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .device__temperature-name {
+        top: 10;
+        right: 143px;
+    }
+
+    .monitoring {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        min-width: 500px;
+        min-height: 880px;
+    }
+
+    .container {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 400px;
+    }
+
+    .content {
+        min-width: 400px;
+    }
+
+    .device__temperature-name {
+        right: 90px;
+    }
+}

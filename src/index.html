@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="scss/global.scss" />
+    </head>
+    <body>
+        <script  type="module" src="./js/main.js"></script>
+
+        <main class="main">
+            <div class="container">
+                <div class="sidebar">
+                    <button class="sidebar__button" id="monitoring">
+                        Monitoring
+                    </button>
+                    <button class="sidebar__button" id="settings">
+                        Settings
+                    </button>
+                </div>
+                
+                <div class="content settings">
+                    <div class="device__temperature-name">
+                        <div class="device__temperature-start">
+                            Start°
+                        </div>
+                        <div class="device__temperature-stop">
+                            Stop°
+                        </div>
+                    </div>
+                    
+                    <div class="devices__list">
+                        <div class="device">
+                            <button
+                                id="setting_status_1"
+                            >
+                                OFF
+                            </button>
+                            <div class="device__name">Pump #1</div>
+                            <input
+                                    type="number"
+                                    id="start_1"
+                                    class="temperature__input-value"
+                                />
+                                <input
+                                    type="number"
+                                    id="stop_1"
+                                    class="temperature__input-value"
+                                />
+                        </div>
+                        <div class="device">
+                            <button
+                                id="setting_status_2"
+                            >
+                                OFF
+                            </button>
+                            <div class="device__name">Pump #2</div>
+                            <input
+                                    type="number"
+                                    id="start_2"
+                                    class="temperature__input-value"
+                                />
+                                <input
+                                    type="number"
+                                    id="stop_2"
+                                    class="temperature__input-value"
+                                />
+                        </div>
+                        <div class="device">
+                            <button
+                                id="setting_status_3"
+                            >
+                                OFF
+                            </button>
+                            <div class="device__name">Fan</div>
+                            <input
+                                    type="number"
+                                    id="start_3"
+                                    class="temperature__input-value"
+                                />
+                                <input
+                                    type="number"
+                                    id="stop_3"
+                                    class="temperature__input-value"
+                                />
+                        </div>
+                        <div class="device">
+                            <button
+                                id="setting_status_4"
+                            >
+                                OFF
+                            </button>
+                            <div class="device__name">Aux</div>
+                            <input
+                                    type="number"
+                                    id="start_4"
+                                    class="temperature__input-value"
+                                />
+                                <input
+                                    type="number"
+                                    id="stop_4"
+                                    class="temperature__input-value"
+                                />
+                        </div>
+                        <div class="content__button">
+                            <button class="sidebar__button subbmit__button" id="submmit_button">
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content monitoring">
+                    <div class="monitoring__temperatures">
+                        <div class="monitoring__temperature">
+                            <div class="monitoring__temperature-text">
+                                Temperature 1:
+                            </div>
+                            <div
+                                class="monitoring__temperature-value"
+                                id="temperature_1"
+                            >
+                                0°
+                            </div>
+                        </div>
+                        <div class="monitoring__temperature monitoring__temperature-second">
+                            <div class="monitoring__temperature-text">
+                                Temperature 2: 
+                            </div>
+                            <div
+                                class="monitoring__temperature-value"
+                                id="temperature_2"
+                            >
+                                0°
+                            </div>
+                        </div>
+                    </div>
+                    <div class="devices__list">
+                        <div class="device">
+                            <div
+                                id="monitor_status_1"
+                            >
+                                OFF
+                            </div>
+                            <div class="device__name">Pump #1</div>
+                        </div>
+                        <div class="device">
+                            <div
+                                id="monitor_status_2"
+                            >
+                                OFF
+                            </div>
+                            <div class="device__name">Pump #2</div>
+                        </div>
+                        <div class="device">
+                            <div
+                                id="monitor_status_3"
+                            >
+                                OFF
+                            </div>
+                            <div class="device__name">Fan</div>
+                        </div>
+                        <div class="device">
+                            <div
+                                id="monitor_status_4"
+                            >
+                                OFF
+                            </div>
+                            <div class="device__name">Aux</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

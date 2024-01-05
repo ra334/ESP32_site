@@ -1,0 +1,20 @@
+.monitoring {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 252px;
+
+    &__temperature {
+        display: flex;
+        justify-content: space-between;
+        min-width: 243px;
+    }
+
+    &__temperature-text {
+        margin-right: 15px;
+    }
+
+    &__temperature-second {
+        margin-top: 71px;
+    }
+}
