@@ -11,7 +11,7 @@ async function getSettings(url) {
     return json
 }
 
-async function setSettings(url, device1_data, device2_data, device3_data, device4_data) {
+async function setSettings(url, device1_data, device2_data, device3_data, device4_data, device_5_data) {
 
     await fetch(url, {
         method: 'POST',
@@ -23,7 +23,8 @@ async function setSettings(url, device1_data, device2_data, device3_data, device
             pump_1: device1_data,
             pump_2: device2_data,
             fan: device3_data,
-            aux: device4_data
+            aux: device4_data,
+            aux_work: device_5_data
         })
     })
 }

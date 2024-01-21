@@ -5,11 +5,11 @@ import getTemperatures from "./getTemperatures";
 
 function devicesStatus(prefix, changeType) {
     getDevicesStatus('/devices').then((data) => {
-        const device_1 = data.device_1
-        const device_2 = data.device_2
-        const device_3 = data.device_3
-        const device_4 = data.device_4
-        let arr = [device_1, device_2, device_3, device_4]
+        const pump_1 = data.pump_1
+        const pump_2 = data.pump_2
+        const fan = data.fan
+        const aux = data.aux
+        let arr = [pump_1, pump_2, fan, aux]
         let counter = 1
 
         let classTypeOnline = ''
@@ -77,10 +77,16 @@ async function sendSettings() {
             alert(errorStr)
             throw new Error(errorStr)
         }
-        arr.push({start: Number(start_elem), stop: Number(stop_elem), isActive: buttonState})
+        arr.push({start: Number(start_elem), stop: Number(stop_elem), isActive: Boolean(buttonState)})
     }
 
-    await setSettings('/settings', arr[0], arr[1], arr[2], arr[3])
+    const checkboxData = document.getElementById('auxWork').checked
+
+    if (checkboxData) {
+        arr[3].isActive = false
+    }
+
+    await setSettings('/settings', arr[0], arr[1], arr[2], arr[3], checkboxData)
 }
 
 
